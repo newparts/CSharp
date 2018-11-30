@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Grafica
 {
@@ -19,21 +20,26 @@ namespace Grafica
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            deseneaza();
+            Thread firgalben = new Thread(()=> deseneaza(Color.Yellow,150,100));
+            Thread firnavy = new Thread(()=> deseneaza(Color.Navy, 100, 150));
+            firgalben.Start();
+            firnavy.Start();
         }
 
-        private void deseneaza()
+        private void deseneaza(Color culoare, Int16 Rx, Int16 Ry)
         {
             Graphics g = pictureBox1.CreateGraphics();
-            Pen creion = new Pen(Color.Navy);
-            int x, y, R=100;
+            Pen creion = new Pen(culoare);
+            Pen guma = new Pen(Color.Yellow);
+            int x, y;
             double alpha;
             for(alpha = -3.14; alpha<=3.14; alpha+=0.02)
             {
-                x = (int)(250 + R * Math.Cos(alpha));
-                y = (int)(250 + R * Math.Sin(alpha));
+                x = (int)(250 + Rx * Math.Cos(alpha));
+                y = (int)(250 + Ry * Math.Sin(alpha));
                 g.DrawRectangle(creion, x, y, 2, 2);
-
+                Thread.Sleep(15);
+                g.DrawRectangle(guma, x, y, 2, 2);
             }
         }
     }
