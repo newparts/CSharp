@@ -45,5 +45,31 @@ namespace CabinetRadiologie
             this.pacientiBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.cabinetRadiologieDataSet);
         }
+
+        private void radiografiiDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        void pic_Click(object sender, EventArgs e)
+        {
+            PictureBox pic = (PictureBox)sender;
+
+            foreach (DataRowView drv in radiografiiBindingSource.List)
+            {
+                string img = (string)drv["Imagine"];
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Validate();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.ShowDialog();
+        }
     }
 }
