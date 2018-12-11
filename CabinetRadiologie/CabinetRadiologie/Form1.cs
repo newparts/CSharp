@@ -38,5 +38,12 @@ namespace CabinetRadiologie
         {
 
         }
+
+        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.pacientiBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.cabinetRadiologieDataSet);
+        }
     }
 }
