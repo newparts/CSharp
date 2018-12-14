@@ -19,10 +19,6 @@ namespace CabinetRadiologie
 
         private void pacientiBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.pacientiBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.cabinetRadiologieDataSet);
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -70,6 +66,18 @@ namespace CabinetRadiologie
         {
             Form2 f = new Form2();
             f.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.Validate();
+            this.pacientiBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.cabinetRadiologieDataSet);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
