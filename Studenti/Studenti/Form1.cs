@@ -16,5 +16,27 @@ namespace Studenti
         {
             InitializeComponent();
         }
+
+        class Persoana
+        {
+            private string nume;
+            private byte varsta;
+
+            public string NumePersoana
+            {
+                get { return nume; }
+                set { nume = value; }
+            }
+
+            public byte VarstaPersoana
+            {
+                get { return varsta; }
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

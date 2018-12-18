@@ -42,12 +42,12 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -181,41 +181,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Afisare";
             // 
-            // button2
+            // textBox2
             // 
-            this.button2.Location = new System.Drawing.Point(6, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 25);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Ordonare dupa nume";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(6, 58);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 25);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Ordonare dupa medie";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(6, 100);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(155, 25);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Afisarea studentilor din anul:";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(179, 102);
-            this.comboBox7.MaxDropDownItems = 3;
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(35, 21);
-            this.comboBox7.TabIndex = 3;
+            this.textBox2.Location = new System.Drawing.Point(112, 137);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(155, 20);
+            this.textBox2.TabIndex = 5;
             // 
             // button5
             // 
@@ -226,12 +197,41 @@
             this.button5.Text = "Cautare nume";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // comboBox7
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 20);
-            this.textBox2.TabIndex = 5;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(179, 102);
+            this.comboBox7.MaxDropDownItems = 3;
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(35, 21);
+            this.comboBox7.TabIndex = 3;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(6, 100);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(155, 25);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Afisarea studentilor din anul:";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(6, 58);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(155, 25);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Ordonare dupa medie";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 19);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(155, 25);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Ordonare dupa nume";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -263,6 +263,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
