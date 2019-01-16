@@ -23,9 +23,9 @@ namespace CabinetRadiologie
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             this.radiografiiTableAdapter.Fill(this.cabinetRadiologieDataSet.Radiografii);
-            
+
             this.pacientiTableAdapter.Fill(this.cabinetRadiologieDataSet.Pacienti);
 
         }
@@ -89,5 +89,7 @@ namespace CabinetRadiologie
 
             pic.Click += pic_Click;
         }
+
+        
     }
 }

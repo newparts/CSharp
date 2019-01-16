@@ -21,9 +21,9 @@ namespace CabinetRadiologie
         {
             Form2 f = new Form2();
             //f.CNP = (string)((DataRowView)pacientiBindingSource.Current)["CNP"];
-            if (f.ShowDialog() == DialogResult.OK)
+            /*if (f.ShowDialog() == DialogResult.OK)
             {
-            }
+            }*/
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
