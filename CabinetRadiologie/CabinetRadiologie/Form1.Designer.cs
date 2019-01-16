@@ -287,7 +287,7 @@
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(357, 61);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(376, 221);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(376, 299);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
             // pictureBox1

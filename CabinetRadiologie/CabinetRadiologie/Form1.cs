@@ -23,9 +23,9 @@ namespace CabinetRadiologie
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'cabinetRadiologieDataSet.Radiografii' table. You can move, or remove it, as needed.
+            
             this.radiografiiTableAdapter.Fill(this.cabinetRadiologieDataSet.Radiografii);
-            // TODO: This line of code loads data into the 'cabinetRadiologieDataSet.Pacienti' table. You can move, or remove it, as needed.
+            
             this.pacientiTableAdapter.Fill(this.cabinetRadiologieDataSet.Pacienti);
 
         }
@@ -77,7 +77,17 @@ namespace CabinetRadiologie
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+            PictureBox pic = new PictureBox();
+
+            //pic.SetBounds(0, 0, latimeControl, inaltimeControl);
+            pic.BackColor = Color.Black;
+            pic.SizeMode = PictureBoxSizeMode.Zoom;
+            //pic.Image = Bitmap.FromFile(numeFisier);
+            pic.Tag = "Alte informatii despre control";
+
+            flowLayoutPanel1.Controls.Add(pic);
+
+            pic.Click += pic_Click;
         }
     }
 }
