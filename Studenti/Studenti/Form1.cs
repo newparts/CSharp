@@ -19,19 +19,33 @@ namespace Studenti
 
         class Persoana
         {
-            private string nume;
-            private byte varsta;
+            protected string Nume;
+            protected byte Varsta;
 
-            public string NumePersoana
+            public Persoana(string nume, byte varsta)
             {
-                get { return nume; }
-                set { nume = value; }
+                Nume = nume;
+                Varsta = varsta;
             }
 
-            public byte VarstaPersoana
+            public string Pers() { return Nume + " " + Varsta; }
+
+        }
+
+        class Student : Persoana
+        {
+            private readonly byte an;
+            private readonly byte[] note = new byte[5];
+            public Student(byte an, string nume, byte note, byte varsta) : base(nume, varsta)
             {
-                get { return varsta; }
+                
             }
+
+            public string AfisareStudent()
+            {
+                return Nume + ", " + Varsta + ", ";
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
