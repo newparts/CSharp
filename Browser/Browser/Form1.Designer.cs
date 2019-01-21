@@ -52,7 +52,7 @@
             this.tabControl1.Location = new System.Drawing.Point(13, 99);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1024, 600);
+            this.tabControl1.Size = new System.Drawing.Size(1024, 800);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -61,7 +61,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1016, 574);
+            this.tabPage1.Size = new System.Drawing.Size(1016, 774);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
@@ -71,7 +71,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(3, 3);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1010, 568);
+            this.webBrowser1.Size = new System.Drawing.Size(1010, 768);
             this.webBrowser1.TabIndex = 0;
             // 
             // txtAddress
