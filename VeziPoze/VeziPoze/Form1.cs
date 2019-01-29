@@ -170,5 +170,35 @@ namespace VeziPoze
         {
 
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(button1, "Roteste Imaginea");
+        }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(button2, "Inverseaza Imaginea");
+        }
+
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(button3, "Cloneaza Imaginea");
+        }
+
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(button4, "Schimba Culoarea");
+        }
+
+        private void button5_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(button5, "Inverseaza Culoarea");
+        }
+
+        private void button6_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(button6, "Salveaza Imaginea");
+        }
     }
 }

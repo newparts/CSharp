@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Nume = new System.Windows.Forms.TextBox();
+            this.Varsta = new System.Windows.Forms.NumericUpDown();
+            this.An = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -48,8 +48,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.Studenti = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Varsta)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,29 +89,29 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Note";
             // 
-            // textBox1
+            // Nume
             // 
-            this.textBox1.Location = new System.Drawing.Point(86, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 4;
+            this.Nume.Location = new System.Drawing.Point(86, 24);
+            this.Nume.Name = "Nume";
+            this.Nume.Size = new System.Drawing.Size(200, 20);
+            this.Nume.TabIndex = 4;
             // 
-            // numericUpDown1
+            // Varsta
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(86, 50);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.Varsta.Location = new System.Drawing.Point(86, 50);
+            this.Varsta.Name = "Varsta";
+            this.Varsta.Size = new System.Drawing.Size(35, 20);
+            this.Varsta.TabIndex = 5;
             // 
-            // comboBox1
+            // An
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(86, 76);
-            this.comboBox1.MaxDropDownItems = 3;
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(35, 21);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.An.FormattingEnabled = true;
+            this.An.Location = new System.Drawing.Point(86, 76);
+            this.An.MaxDropDownItems = 3;
+            this.An.Name = "An";
+            this.An.Size = new System.Drawing.Size(35, 21);
+            this.An.TabIndex = 6;
+            this.An.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -166,6 +166,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Adauga";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -235,21 +236,21 @@
             this.button2.Text = "Ordonare dupa nume";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // Studenti
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(315, 13);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(433, 342);
-            this.listBox1.TabIndex = 14;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.Studenti.FormattingEnabled = true;
+            this.Studenti.Location = new System.Drawing.Point(315, 13);
+            this.Studenti.Name = "Studenti";
+            this.Studenti.Size = new System.Drawing.Size(433, 342);
+            this.Studenti.TabIndex = 14;
+            this.Studenti.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.Studenti);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox6);
@@ -257,9 +258,9 @@
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.An);
+            this.Controls.Add(this.Varsta);
+            this.Controls.Add(this.Nume);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -267,7 +268,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Varsta)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -281,9 +282,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox Nume;
+        private System.Windows.Forms.NumericUpDown Varsta;
+        private System.Windows.Forms.ComboBox An;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
@@ -297,7 +298,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox Studenti;
     }
 }
 

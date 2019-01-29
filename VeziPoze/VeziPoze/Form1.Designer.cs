@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLoadImages = new System.Windows.Forms.Button();
@@ -37,12 +38,14 @@
             this.oFD1 = new System.Windows.Forms.OpenFileDialog();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.saveFD = new System.Windows.Forms.SaveFileDialog();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,8 +67,8 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(750, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(750, 500);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
@@ -111,63 +114,86 @@
             // 
             // button1
             // 
+            this.button1.ImageKey = "iconfinder_ic_screen_rotation_48px_352089.png";
+            this.button1.ImageList = this.imageList2;
             this.button1.Location = new System.Drawing.Point(254, 24);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 35);
             this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "iconfinder_clone_1608634.png");
+            this.imageList2.Images.SetKeyName(1, "iconfinder_Deal_With_It_Glasses_pixel_geek_mame_3186898.png");
+            this.imageList2.Images.SetKeyName(2, "iconfinder_ic_crop_din_48px_352295.png");
+            this.imageList2.Images.SetKeyName(3, "iconfinder_ic_flip_48px_352371.png");
+            this.imageList2.Images.SetKeyName(4, "iconfinder_ic_screen_rotation_48px_352089.png");
+            this.imageList2.Images.SetKeyName(5, "iconfinder_save_1608823.png");
             // 
             // button2
             // 
+            this.button2.ImageKey = "iconfinder_ic_flip_48px_352371.png";
+            this.button2.ImageList = this.imageList2;
             this.button2.Location = new System.Drawing.Point(295, 24);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 35);
             this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // button3
             // 
+            this.button3.ImageKey = "iconfinder_ic_crop_din_48px_352295.png";
+            this.button3.ImageList = this.imageList2;
             this.button3.Location = new System.Drawing.Point(336, 24);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(35, 35);
             this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // button4
             // 
+            this.button4.ImageKey = "iconfinder_Deal_With_It_Glasses_pixel_geek_mame_3186898.png";
+            this.button4.ImageList = this.imageList2;
             this.button4.Location = new System.Drawing.Point(377, 24);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(35, 35);
             this.button4.TabIndex = 7;
-            this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // button5
             // 
+            this.button5.ImageKey = "iconfinder_clone_1608634.png";
+            this.button5.ImageList = this.imageList2;
             this.button5.Location = new System.Drawing.Point(418, 24);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(35, 35);
             this.button5.TabIndex = 8;
-            this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
             // 
             // button6
             // 
+            this.button6.ImageKey = "iconfinder_save_1608823.png";
+            this.button6.ImageList = this.imageList2;
             this.button6.Location = new System.Drawing.Point(459, 24);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(35, 35);
             this.button6.TabIndex = 9;
-            this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
             // 
             // saveFD
             // 
@@ -191,7 +217,6 @@
             this.Name = "Form1";
             this.Text = "Imagini";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -214,6 +239,8 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.SaveFileDialog saveFD;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

@@ -34,10 +34,10 @@ namespace Studenti
 
         class Student : Persoana
         {
-            float Medie;
+            float Media;
             private readonly byte an;
             private readonly byte[] note = new byte[5];
-            public Student(byte an, string nume, byte note, byte varsta, float Medie) : base(nume, varsta)
+            public Student(byte an, string nume, byte note, byte varsta, float Media) : base(nume, varsta)
             {
 
 
@@ -45,7 +45,7 @@ namespace Studenti
 
             public string AfisareStudent()
             {
-                return Nume + ", " + Varsta + " de ani, anul " + an + " " + Medie + ", media ";
+                return Nume + ", " + Varsta + " de ani, anul " + an + " " + Media + ", media ";
             }
 
         }
@@ -71,5 +71,14 @@ namespace Studenti
            
     
     }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Studenti.Items.Add(AfisareStudent());
+            Nume.Clear();
+            
+
+        }
     }
 }
