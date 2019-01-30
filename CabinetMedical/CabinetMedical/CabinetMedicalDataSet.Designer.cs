@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace CabinetMedical {
     
     
@@ -1313,7 +1315,9 @@ namespace CabinetMedical.CabinetMedicalDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-        
+
+        public object Pacienti { get; internal set; }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitAdapter() {
@@ -1552,6 +1556,11 @@ namespace CabinetMedical.CabinetMedicalDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string Nume, string Adresa, string Original_CNP, string Original_Nume) {
             return this.Update(Original_CNP, Nume, Adresa, Original_CNP, Original_Nume);
+        }
+
+        internal void SaveChanges()
+        {
+            throw new NotImplementedException();
         }
     }
     

@@ -22,5 +22,11 @@ namespace CabinetMedical
             Form2 f = new Form2();
             f.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.ShowDialog();
+        }
     }
 }
