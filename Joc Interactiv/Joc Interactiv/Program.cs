@@ -10,21 +10,9 @@ namespace Joc_Interactiv
     {
         static void Main(string[] args)
         {
-            string appNume = "Ghiceste Numarul Corect";
-            string appVersiune = "1.0.0";
-            string appAutor = "Newparts";
+            GetAppInfo();
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
-
-            Console.WriteLine("Aplicatia: {0} | Versiunea: {1} | Realizata de {2}", appNume, appVersiune, appAutor);         
-
-            Console.ResetColor();
-
-            Console.WriteLine("Care este numele tau?");
-
-            string inputNume = Console.ReadLine();
-
-            Console.WriteLine("Salut {0}, hai sa ne jucam !", inputNume);
+            GreetUser();
 
             while (true)
             {
@@ -42,11 +30,7 @@ namespace Joc_Interactiv
 
                     if (!int.TryParse(input, out aleator))
                     {
-                        Console.ForegroundColor = ConsoleColor.Blue;
-
-                        Console.WriteLine("Te rog tasteaza un numar !");
-
-                        Console.ResetColor();
+                        PrintColorMessage(ConsoleColor.Blue, "Te rog tasteaza un numar !");
 
                         continue;
                     }
@@ -54,20 +38,12 @@ namespace Joc_Interactiv
                     aleator = Int32.Parse(input);
 
                     if (aleator != numarCorect)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-
-                        Console.WriteLine("Numar gresit, incearca din nou !");
-
-                        Console.ResetColor();
+                    { 
+                        PrintColorMessage(ConsoleColor.Red, "Numar gresit, incearca din nou !");
                     }
                 }
 
-                Console.ForegroundColor = ConsoleColor.Green;
-
-                Console.WriteLine("Ai ghicit numarul corect !");
-
-                Console.ResetColor();
+                PrintColorMessage(ConsoleColor.Green, "Ai ghicit numarul corect !");
 
                 Console.WriteLine("Joaca din nou? [D sau N]");
 
@@ -86,10 +62,39 @@ namespace Joc_Interactiv
                     return;
                 }
             
-                Console.Read();
-
-
+                //Console.Read();
             }
+        }
+
+        static void GetAppInfo()
+        {
+            string appNume = "Ghiceste Numarul Corect";
+            string appVersiune = "1.0.0";
+            string appAutor = "Newparts";
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine("Aplicatia: {0} | Versiunea: {1} | Realizata de {2}", appNume, appVersiune, appAutor);
+
+            Console.ResetColor();
+        }
+
+        static void GreetUser()
+        {
+            Console.WriteLine("Care este numele tau?");
+
+            string inputNume = Console.ReadLine();
+
+            Console.WriteLine("Salut {0}, hai sa ne jucam putin !", inputNume);
+        }
+
+        static void PrintColorMessage(ConsoleColor color, string message)
+        {
+            Console.ForegroundColor = color;
+
+            Console.WriteLine(message);
+
+            Console.ResetColor();
         }
     }
 }
