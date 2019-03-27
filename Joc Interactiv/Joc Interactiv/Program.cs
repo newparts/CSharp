@@ -10,11 +10,22 @@ namespace Joc_Interactiv
     {
         static void Main(string[] args)
         {
-            string appNume = "Ghiceste numarul corect";
+            string appNume = "Ghiceste Numarul Corect";
             string appVersiune = "1.0.0";
             string appAutor = "Newparts";
 
-            Console.WriteLine("{0}: Versiunea{1} de {2}", appNume, appVersiune, appAutor);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine("Aplicatia: {0} | Versiunea: {1} | Realizata de {2}", appNume, appVersiune, appAutor);         
+
+            Console.ResetColor();
+
+            Console.WriteLine("Care este numele tau?");
+
+            string inputNume = Console.ReadLine();
+
+            Console.WriteLine("Salut {0}, hai sa ne jucam !", inputNume);
+
             Console.Read();
         }
     }
