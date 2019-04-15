@@ -16,5 +16,15 @@ namespace Carti
         {
             InitializeComponent();
         }
+
+        private void pictureBox3_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
