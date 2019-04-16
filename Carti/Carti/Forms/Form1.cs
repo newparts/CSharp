@@ -26,5 +26,14 @@ namespace Carti
         {
             this.Dispose();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (Forms.Form_Dashboard fd = new Forms.Form_Dashboard())
+            {
+                fd.ShowDialog();
+            }
+
+        }
     }
 }
