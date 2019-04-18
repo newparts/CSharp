@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Carti.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,8 @@ namespace Carti.Forms
             timerTime.Start();
             PanelWidth = panelLeft.Width;
             isCollapsed = false;
+            UC_Home uch = new UC_Home();
+            AddControlsToPanel(uch);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -69,9 +72,18 @@ namespace Carti.Forms
             panelSide.Height = btn.Height;
         }
 
+        private void AddControlsToPanel(Control c)
+        {
+            c.Dock = DockStyle.Fill;
+            panelControls.Controls.Clear();
+            panelControls.Controls.Add(c);
+        }
+
         private void btnHome_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnHome);
+            UC_Home uch = new UC_Home();
+            AddControlsToPanel(uch);
         }
 
         private void btnDepozit_Click(object sender, EventArgs e)
