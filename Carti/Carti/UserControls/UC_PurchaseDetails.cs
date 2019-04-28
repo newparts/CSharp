@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Carti.UserControls
 {
-    public partial class UC_Vanzari : UserControl
+    public partial class UC_PurchaseDetails : UserControl
     {
-        public UC_Vanzari()
+        public UC_PurchaseDetails()
         {
             InitializeComponent();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            using (Forms.Form_FinishOrder uf = new Forms.Form_FinishOrder())
-            {
-                uf.ShowDialog();
-            }
         }
     }
 }
