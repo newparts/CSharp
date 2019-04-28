@@ -74,6 +74,12 @@
     <Compile Include="UserControls\UC_Home.Designer.cs">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_Vanzari.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Vanzari.Designer.cs">
+      <DependentUpon>UC_Vanzari.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +97,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Vanzari.resx">
+      <DependentUpon>UC_Vanzari.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

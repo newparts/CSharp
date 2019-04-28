@@ -89,6 +89,8 @@ namespace Carti.Forms
         private void btnDepozit_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnDepozit);
+            UC_Vanzari uv = new UC_Vanzari();
+            AddControlsToPanel(uv);
         }
 
         private void btnComenzi_Click(object sender, EventArgs e)
