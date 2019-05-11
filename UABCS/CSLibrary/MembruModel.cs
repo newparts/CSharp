@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CSLibrary
 {
+    /// <summary>
+    /// Reprezinta un membru nou al unei echipe
+    /// </summary>
     public class MembruModel
     {
         /// <summary>

@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CSLibrary
 {
+    /// <summary>
+    /// Reprezinta meciurile din competitie
+    /// </summary>
     public class MeciuriModel
     {
         /// <summary>

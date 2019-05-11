@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CSLibrary
 {
+    /// <summary>
+    /// Reprezinta o echipa nou formata
+    /// </summary>
     public class EchipaModel
     {
         /// <summary>

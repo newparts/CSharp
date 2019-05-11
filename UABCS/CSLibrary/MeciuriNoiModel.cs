@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CSLibrary
 {
+    /// <summary>
+    /// Reprezinta un meciurile noi introduse
+    /// </summary>
     public class MeciuriNoiModel
     {
         /// <summary>

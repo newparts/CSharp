@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CSLibrary
 {
+    /// <summary>
+    /// Reprezinta premiile puse in joc in competitie
+    /// </summary>
     public class PremiiModel
     {
         /// <summary>
