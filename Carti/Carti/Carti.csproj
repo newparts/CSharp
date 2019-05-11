@@ -80,6 +80,12 @@
     <Compile Include="UserControls\UC_Home.Designer.cs">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_PurchaseDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_PurchaseDetails.Designer.cs">
+      <DependentUpon>UC_PurchaseDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UC_Vanzari.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_PurchaseDetails.resx">
+      <DependentUpon>UC_PurchaseDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Vanzari.resx">
       <DependentUpon>UC_Vanzari.cs</DependentUpon>
