@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5E4081A-2A22-42DD-85E4-55C72F903ABF}</ProjectGuid>
+    <ProjectGuid>{CA07D7D1-4F4B-4BBB-A901-D1704129A0C1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>UABCSUI</RootNamespace>
     <AssemblyName>UABCSUI</AssemblyName>
@@ -46,14 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AdaugaEchipaNoua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AdaugaEchipaNoua.Designer.cs">
+      <DependentUpon>AdaugaEchipaNoua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaCompetitieNoua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugaCompetitieNoua.Designer.cs">
+      <DependentUpon>AdaugaCompetitieNoua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaPremiuNou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugaPremiuNou.Designer.cs">
+      <DependentUpon>AdaugaPremiuNou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanouCompetitie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanouCompetitie.Designer.cs">
+      <DependentUpon>PanouCompetitie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizeazaCompetitieNoua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizeazaCompetitieNoua.Designer.cs">
+      <DependentUpon>OrganizeazaCompetitieNoua.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdaugaCompetitieNoua.resx">
+      <DependentUpon>AdaugaCompetitieNoua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugaEchipaNoua.resx">
+      <DependentUpon>AdaugaEchipaNoua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugaPremiuNou.resx">
+      <DependentUpon>AdaugaPremiuNou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizeazaCompetitieNoua.resx">
+      <DependentUpon>OrganizeazaCompetitieNoua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanouCompetitie.resx">
+      <DependentUpon>PanouCompetitie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSLibrary\CSLibrary.csproj">
+      <Project>{a253628a-385f-4f50-bcb3-a5aca39f9bd8}</Project>
+      <Name>CSLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

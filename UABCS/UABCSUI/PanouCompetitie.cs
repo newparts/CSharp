@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace UABCSUI
 {
-    public partial class Form1 : Form
+    public partial class PanouCompetitie : Form
     {
-        public Form1()
+        public PanouCompetitie()
         {
             InitializeComponent();
+        }
+
+        private void premiuNou_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

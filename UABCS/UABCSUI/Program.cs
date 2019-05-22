@@ -16,7 +16,9 @@ namespace UABCSUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            CSLibrary.GlobalConfig.InitializareConexiuni(true, true);
+            //Application.Run(new PanouCompetitie());
+            Application.Run(new AdaugaPremiuNou());
         }
     }
 }
