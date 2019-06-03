@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsignatieUI", "ConsignatieUI\ConsignatieUI.csproj", "{52F3A946-DD4B-47C7-A86A-C6C4FC5915B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsignatieClassLibrary", "ConsignatieClassLibrary\ConsignatieClassLibrary.csproj", "{D29E050E-A3AD-4264-BFB8-7A893D04B5DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52F3A946-DD4B-47C7-A86A-C6C4FC5915B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F3A946-DD4B-47C7-A86A-C6C4FC5915B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F3A946-DD4B-47C7-A86A-C6C4FC5915B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F3A946-DD4B-47C7-A86A-C6C4FC5915B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D29E050E-A3AD-4264-BFB8-7A893D04B5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D29E050E-A3AD-4264-BFB8-7A893D04B5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D29E050E-A3AD-4264-BFB8-7A893D04B5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D29E050E-A3AD-4264-BFB8-7A893D04B5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B594DD39-63CA-475B-9894-A32FF0366DE0}
+	EndGlobalSection
+EndGlobal

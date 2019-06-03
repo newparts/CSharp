@@ -8,6 +8,8 @@ namespace UABCSUI
 {
     static class Program
     {
+        public static object UABCSLibrary { get; private set; }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,7 @@ namespace UABCSUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            CSLibrary.GlobalConfig.InitializareConexiuni(true, true);
+            UABCSLibrary.GlobalConfig.InitializareConexiuni(true, true);
             //Application.Run(new PanouCompetitie());
             Application.Run(new AdaugaPremiuNou());
         }

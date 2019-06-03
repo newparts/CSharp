@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSLibrary.AccesDate;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -24,5 +25,10 @@ namespace CSLibrary
                 Conexiuni.Add(text);
             }
         }
+
+        //public static string CnnString(string name)
+        //{
+            //return ConfigurationManager.ConnectionsStrings[name].ConnectionString;
+       // }
     }
 }
