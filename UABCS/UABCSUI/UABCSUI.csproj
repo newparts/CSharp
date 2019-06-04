@@ -169,5 +169,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UABCSLib\UABCSLib.csproj">
+      <Project>{98e648f2-088a-4ae6-bf0e-32190375bf17}</Project>
+      <Name>UABCSLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

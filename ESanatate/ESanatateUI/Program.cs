@@ -4,12 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UABCSUI
+namespace ESanatateUI
 {
     static class Program
     {
-        public static object UABCSLibrary { get; private set; }
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,9 +16,7 @@ namespace UABCSUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            UABCSLib.GlobalConfig.InitializareConexiuni(true, true);
-            //Application.Run(new PanouCompetitie());
-            Application.Run(new AdaugaPremiuNou());
+            Application.Run(new EsanatateForm());
         }
     }
 }
