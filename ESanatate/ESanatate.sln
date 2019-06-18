@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESanatateUI", "ESanatateUI\ESanatateUI.csproj", "{EAA86CC7-5CE0-47D7-9F0D-30288A259213}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESLibrary", "ESLibrary\ESLibrary.csproj", "{DFB06AAB-36B9-463D-AC91-3EF849283049}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ESanatateDB", "ESanatateDB\ESanatateDB.sqlproj", "{867DAEF3-50CB-4D18-B5CF-207459D054CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{EAA86CC7-5CE0-47D7-9F0D-30288A259213}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAA86CC7-5CE0-47D7-9F0D-30288A259213}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAA86CC7-5CE0-47D7-9F0D-30288A259213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB06AAB-36B9-463D-AC91-3EF849283049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB06AAB-36B9-463D-AC91-3EF849283049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB06AAB-36B9-463D-AC91-3EF849283049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB06AAB-36B9-463D-AC91-3EF849283049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867DAEF3-50CB-4D18-B5CF-207459D054CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867DAEF3-50CB-4D18-B5CF-207459D054CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867DAEF3-50CB-4D18-B5CF-207459D054CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{867DAEF3-50CB-4D18-B5CF-207459D054CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867DAEF3-50CB-4D18-B5CF-207459D054CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867DAEF3-50CB-4D18-B5CF-207459D054CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
