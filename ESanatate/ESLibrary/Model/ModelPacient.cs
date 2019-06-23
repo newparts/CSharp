@@ -13,8 +13,6 @@ namespace ESLibrary.Model
         public string CNP { get; set; }
         public string SerieCI { get; set; }
         public string NumarCI { get; set; }
-        public string SerieContract { get; set; }
-        public string NumarContract { get; set; }
         public string CardSanatate { get; set; }
         public string User { get; set; }
         public string Parola { get; set; }

@@ -21,4 +21,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Utilizator" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="942cf9ec-ff4d-4a45-91cc-4d4a56462ccc" ChangeDateTime="06/23/2019 17:25:47">
+    <Property Name="ElementName" Value="[dbo].[Facturi].[Data]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Facturi]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DataEmiterii" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d325d8bd-0280-4f4c-991f-fc7511419c8d" ChangeDateTime="06/23/2019 17:26:32">
+    <Property Name="ElementName" Value="[dbo].[Facturi].[Scadenta]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Facturi]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DataScadentei" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6f077db1-481a-4210-ad14-ec56bfec00d0" ChangeDateTime="06/23/2019 17:28:29">
+    <Property Name="ElementName" Value="[dbo].[Facturi].[Valoare]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Facturi]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ValoareNeta" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b0cd5a71-9a92-4389-a5a4-19d9ddccc2f8" ChangeDateTime="06/23/2019 17:28:48">
+    <Property Name="ElementName" Value="[dbo].[Facturi].[Valoare]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Facturi]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ValoareTotala" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b54dd33b-6e2b-457b-8c47-ffc1efa0cd81" ChangeDateTime="06/23/2019 17:36:00">
+    <Property Name="ElementName" Value="[dbo].[Furnizori].[Contract]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Furnizori]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SerieContract" />
+  </Operation>
 </Operations>

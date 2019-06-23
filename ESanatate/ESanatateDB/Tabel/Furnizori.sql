@@ -10,5 +10,6 @@
     [Tara] NVARCHAR(50) NOT NULL, 
     [CodPostal] INT NOT NULL, 
     [Telefon] NVARCHAR(50) NOT NULL, 
-    [Email] NVARCHAR(50) NOT NULL
+    [Email] NVARCHAR(50) NOT NULL, 
+    [SerieContract] NVARCHAR(50) NOT NULL
 )
