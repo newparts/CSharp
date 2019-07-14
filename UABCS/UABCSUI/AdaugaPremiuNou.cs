@@ -37,7 +37,7 @@ namespace UABCSUI
                     valoarePremiuValue.Text, 
                     numeleLoculuiValue.Text, 
                     procentPremiuValue.Text);
-                foreach (IConexiuneDate db in GlobalConfig.Conexiuni)
+                foreach (IDataConnection db in GlobalConfig.Connections)
                 {
                     db.CrearePremii(model);
                 }

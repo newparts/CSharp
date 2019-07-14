@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ESLibrary.Model
 {
-    class ModelProdus
+    public class ModelTratament
     {
-        public string DenumireProdus { get; set; }
+        public string Materiale { get; set; }
         public double Valoare { get; set; }
         public double TVA { get; set; }
         public double Pret { get; set; }
         public string Cantitate { get; set; }
+        public string Servicii { get; set; }
     }
 }

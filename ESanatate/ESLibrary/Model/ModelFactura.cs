@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ESLibrary.Model
 {
-    class ModelFactura
+    public class ModelFactura
     {
         public int NumarFactura { get; set; }
         public string SerieFacutura { get; set; }

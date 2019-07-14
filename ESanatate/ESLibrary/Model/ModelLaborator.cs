@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ESLibrary.Model
 {
-    class ModelLaborator
+    public class ModelLaborator
     {
         public string Denumire { get; set; }
         public string Email { get; set; }

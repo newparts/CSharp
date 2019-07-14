@@ -27,12 +27,7 @@ namespace UABCSLib.Model
         /// <summary>
         /// Reprezinta cat procent din suma adunata ca taxa reprezinta premiul castigat de echipa
         /// </summary>
-        public double ProcentPremiu { get; set; }
-
-        public PremiiModel()
-        {
-
-        }
+        public double ProcentPremiu { get; set; }       
 
         public PremiiModel(string loculOcupat, string valoarePremiu, string numeleLocului, string procentPremiu)
         {

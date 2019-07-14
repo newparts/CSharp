@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ESLibrary.Model
 {
-    class ModelFurnizor
+    public class ModelFurnizor
     {
         public string NumeFurnizor { get; set; }
         public string RegCom { get; set; }

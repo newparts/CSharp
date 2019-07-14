@@ -16,7 +16,8 @@ namespace ESanatateUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EsanatateForm());
+            ESLibrary.GlobalConfig.InitializeConnections(true, true);
+            Application.Run(new AdaugaMedicNou());
         }
     }
 }

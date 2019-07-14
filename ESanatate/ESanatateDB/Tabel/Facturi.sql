@@ -12,5 +12,6 @@
     [UnitateMasura] NCHAR(10) NOT NULL, 
     [ValoareTotala] MONEY NOT NULL, 
     [PretUnitar] MONEY NOT NULL, 
-    [TVA] MONEY NOT NULL 
+    [TVA] MONEY NOT NULL, 
+    CONSTRAINT [FK_Facturi_Furnizori] FOREIGN KEY ([FurnizorID]) REFERENCES [Furnizori]([Id]) 
 )

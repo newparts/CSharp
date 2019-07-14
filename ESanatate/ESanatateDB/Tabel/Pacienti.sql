@@ -12,5 +12,8 @@
     [Localitate] NVARCHAR(50) NOT NULL, 
     [Judet] NVARCHAR(50) NOT NULL, 
     [Tara] NVARCHAR(50) NOT NULL, 
-    [CodPostal] INT NULL
+    [CodPostal] INT NOT NULL, 
+    [Card Sanatate] NVARCHAR(50) NOT NULL, 
+    [Utilizator] NVARCHAR(50) NOT NULL, 
+    [Parola] NVARCHAR(50) NOT NULL
 )

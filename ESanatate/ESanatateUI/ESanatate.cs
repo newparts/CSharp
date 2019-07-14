@@ -16,5 +16,16 @@ namespace ESanatateUI
         {
             InitializeComponent();
         }
+
+        private void buttonProgramari_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void buttonAdmin_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

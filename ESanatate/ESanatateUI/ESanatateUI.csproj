@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.60.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.60.6\lib\net451\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +49,124 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdaugaMedicNou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugaMedicNou.Designer.cs">
+      <DependentUpon>AdaugaMedicNou.cs</DependentUpon>
+    </Compile>
     <Compile Include="ESanatate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ESanatate.Designer.cs">
       <DependentUpon>ESanatate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inregistrari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inregistrari.Designer.cs">
+      <DependentUpon>Inregistrari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logare.Designer.cs">
+      <DependentUpon>Logare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadiografieNoua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadiografieNoua.Designer.cs">
+      <DependentUpon>RadiografieNoua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registratura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registratura.Designer.cs">
+      <DependentUpon>Registratura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AsistentNou.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AsistentNou.Designer.cs">
+      <DependentUpon>AsistentNou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FurnizorNou.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FurnizorNou.Designer.cs">
+      <DependentUpon>FurnizorNou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InregistrariNoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\InregistrariNoi.Designer.cs">
+      <DependentUpon>InregistrariNoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LaboratorNou.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LaboratorNou.Designer.cs">
+      <DependentUpon>LaboratorNou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MedicNou.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MedicNou.Designer.cs">
+      <DependentUpon>MedicNou.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Programare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programare.Designer.cs">
+      <DependentUpon>Programare.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\PacientNou.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PacientNou.Designer.cs">
+      <DependentUpon>PacientNou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RadiografieNoua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RadiografieNoua.Designer.cs">
+      <DependentUpon>RadiografieNoua.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdaugaMedicNou.resx">
+      <DependentUpon>AdaugaMedicNou.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ESanatate.resx">
       <DependentUpon>ESanatate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inregistrari.resx">
+      <DependentUpon>Inregistrari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logare.resx">
+      <DependentUpon>Logare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadiografieNoua.resx">
+      <DependentUpon>RadiografieNoua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registratura.resx">
+      <DependentUpon>Registratura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AsistentNou.resx">
+      <DependentUpon>AsistentNou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FurnizorNou.resx">
+      <DependentUpon>FurnizorNou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\InregistrariNoi.resx">
+      <DependentUpon>InregistrariNoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LaboratorNou.resx">
+      <DependentUpon>LaboratorNou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programare.resx">
+      <DependentUpon>Programare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +177,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\MedicNou.resx">
+      <DependentUpon>MedicNou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PacientNou.resx">
+      <DependentUpon>PacientNou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RadiografieNoua.resx">
+      <DependentUpon>RadiografieNoua.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,6 +201,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ESanatateDB\ESanatateDB.sqlproj">
+      <Project>{867daef3-50cb-4d18-b5cf-207459d054cf}</Project>
+      <Name>ESanatateDB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ESLibrary\ESLibrary.csproj">
       <Project>{dfb06aab-36b9-463d-ac91-3ef849283049}</Project>
       <Name>ESLibrary</Name>

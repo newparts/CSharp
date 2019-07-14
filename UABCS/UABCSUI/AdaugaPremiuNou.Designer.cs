@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdaugaPremiuNou));
             this.premiuNou = new System.Windows.Forms.Label();
             this.loculOcupatValue = new System.Windows.Forms.TextBox();
-            this.loculOcupatLabel = new System.Windows.Forms.Label();
+            this.loculOcupat = new System.Windows.Forms.Label();
             this.numeleLoculuiValue = new System.Windows.Forms.TextBox();
             this.numeleLocului = new System.Windows.Forms.Label();
             this.valoarePremiuValue = new System.Windows.Forms.TextBox();
@@ -61,16 +61,16 @@
             this.loculOcupatValue.TabIndex = 15;
             this.loculOcupatValue.TextChanged += new System.EventHandler(this.numeValue_TextChanged);
             // 
-            // loculOcupatLabel
+            // loculOcupat
             // 
-            this.loculOcupatLabel.AutoSize = true;
-            this.loculOcupatLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.loculOcupatLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(175)))));
-            this.loculOcupatLabel.Location = new System.Drawing.Point(33, 149);
-            this.loculOcupatLabel.Name = "loculOcupatLabel";
-            this.loculOcupatLabel.Size = new System.Drawing.Size(174, 31);
-            this.loculOcupatLabel.TabIndex = 14;
-            this.loculOcupatLabel.Text = "Locul Ocupat";
+            this.loculOcupat.AutoSize = true;
+            this.loculOcupat.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.loculOcupat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(175)))));
+            this.loculOcupat.Location = new System.Drawing.Point(33, 149);
+            this.loculOcupat.Name = "loculOcupat";
+            this.loculOcupat.Size = new System.Drawing.Size(174, 31);
+            this.loculOcupat.TabIndex = 14;
+            this.loculOcupat.Text = "Locul Ocupat";
             // 
             // numeleLoculuiValue
             // 
@@ -171,7 +171,7 @@
             this.Controls.Add(this.numeleLoculuiValue);
             this.Controls.Add(this.numeleLocului);
             this.Controls.Add(this.loculOcupatValue);
-            this.Controls.Add(this.loculOcupatLabel);
+            this.Controls.Add(this.loculOcupat);
             this.Controls.Add(this.premiuNou);
             this.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -188,7 +188,7 @@
 
         private System.Windows.Forms.Label premiuNou;
         private System.Windows.Forms.TextBox loculOcupatValue;
-        private System.Windows.Forms.Label loculOcupatLabel;
+        private System.Windows.Forms.Label loculOcupat;
         private System.Windows.Forms.TextBox numeleLoculuiValue;
         private System.Windows.Forms.Label numeleLocului;
         private System.Windows.Forms.TextBox valoarePremiuValue;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ESLibrary.Model
 {
-    class ModelAsistent
+    public class ModelAsistent
     {
         public string Nume { get; set; }
         public string Prenume { get; set; }

@@ -20,7 +20,7 @@ namespace UABCSLib.Model
         /// <summary>
         /// Reprezinta Numele Echipelor participante la competitie
         /// </summary>
-        public List<MembruModel> EchipeParticipante { get; set; } = new List<MembruModel>();
+        public List<Model.MembruModel> EchipeParticipante { get; set; } = new List<Model.MembruModel>();
         /// <summary>
         /// Reprezinta Premiile puse in joc
         /// </summary>

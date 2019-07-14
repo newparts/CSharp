@@ -56,4 +56,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SerieContract" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e1e6f9b9-a5c5-4192-930f-4d5109ca9ed1" ChangeDateTime="06/27/2019 16:01:16">
+    <Property Name="ElementName" Value="[dbo].[Condica].[Proceduri]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Condica]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdTratamente" />
+  </Operation>
 </Operations>

@@ -58,6 +58,9 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tabel" />
+    <Folder Include="PublishLocations" />
+    <Folder Include="Views" />
+    <Folder Include="Proceduri" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tabel\Laborator.sql" />
@@ -66,8 +69,18 @@
     <Build Include="Tabel\Asistenti.sql" />
     <Build Include="Tabel\Furnizori.sql" />
     <Build Include="Tabel\Facturi.sql" />
+    <Build Include="Tabel\Radiografii.sql" />
+    <Build Include="Tabel\Tratamente.sql" />
+    <Build Include="Views\Pacient.sql" />
+    <Build Include="Proceduri\spPacient_CNP.sql" />
+    <Build Include="Tabel\Condica.sql" />
+    <Build Include="Proceduri\spAdauga_Medic.sql" />
+    <Build Include="Proceduri\spAdauga_Asistent.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ESanatateDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishLocations\ESanatateDB.publish.xml" />
   </ItemGroup>
 </Project>
